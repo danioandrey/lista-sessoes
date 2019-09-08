@@ -12,14 +12,51 @@ body {
 }
 
 header, .footer{
+    width: 100%;
     background-color: #1d1e20;
+}
+
+header{
+    position: fixed;
+    opacity: 0.9;
 }
 
 header img {
 
     width: 250px;
     height: 40px;
-    margin-left: 220px;
+    margin-left: 200px;
+   
+    
+}
+
+
+#destaque img{
+    margin-top: -10px;
+    width: 100%;
+    height: 450px;
+    background:linear-gradient(to bottom, rgba(0,0,0,0.65) 0%);
+    
+}
+
+.content{
+    display: flex;
+    margin-top: -330px;
+    margin-left: 200px;
+    margin-right: 200px;
+    justify-content: space-around;
+}
+.info, .cartaz, .trailer{
+   
+    margin-left: 15px;
+    color: antiquewhite;
+}
+
+
+.image{
+    
+    width: 250px;
+    height: 350px;
 }
 
 
@@ -32,9 +69,10 @@ header img {
     
 }
 
-footer div img{
-    width: 150px;
+footer div{
+    
     margin-left: auto;
     margin-right: auto;
     
 }
+
