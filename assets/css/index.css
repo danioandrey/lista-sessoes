@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
 }
-
+/*--------------------------------------------header----------------------------------------------*/
 header, .footer{
     width: 100%;
     background-color: #1d1e20;
@@ -22,21 +22,23 @@ header{
 }
 
 header img {
-
     width: 250px;
     height: 40px;
     margin-left: 200px;
-   
-    
-}
+   }
 
-
+/*--------------------------------------------conteudo----------------------------------------------*/
 #destaque img{
     margin-top: -10px;
     width: 100%;
     height: 450px;
-    background:linear-gradient(to bottom, rgba(0,0,0,0.65) 0%);
-    
+    background:linear-gradient(to bottom, rgba(0,0,0,0.65) 0%);    
+}
+
+h1,h2,h3,.address{
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
 }
 
 .content{
@@ -47,38 +49,110 @@ header img {
     justify-content: space-around;
 }
 .info, .cartaz, .trailer{
-   
     margin-left: 15px;
     color: antiquewhite;
 }
 span {
-
 text-align: justify;
 }
 
 
-.image{
-    
+.image{    
     width: 250px;
     height: 350px;
 }
 
+.sessao{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 200px;
+    margin-bottom: 200px;
+    margin-right: 200px;
+    flex-wrap: wrap;
+    
+}
+.sessaoInfo{
+    flex:1 1;
+    align-items: center;
+    width: 400px;
+    height: 180px;
+    background-color: #363535;   
+    margin:10px;
+}
 
-.footer {
-    position:fixed;
-    bottom: 0;
-    left: 0;
-    width:100%;
+.sala {
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+    color: white;
+}
+
+
+.hora{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0;  
+    margin-left: 15px; 
+      
+      
+}
+
+.item-hora{
+    display:flex;
+    align-items: center;
+    color: white;
     text-align: center;
-    
-    
+    flex-wrap: wrap;
     
 }
 
-footer div{
+.item-hora a{    
+    display: block;
+    background: #25b8ff;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
     
-    height: 150px%;
     
+}
+.cinema{
+    display:flex;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+hr{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.image-cinema{    
+    width: 100px;
     
+}
+p{
+    font-size: 15px;
+}
+#address{
+    color:white;
+    margin-left: 10px;
+}
+
+/*--------------------------------------------Rodapé----------------------------------------------*/
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    text-align: center;   
+}
+
+.footer img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 80px;    
 }
 
