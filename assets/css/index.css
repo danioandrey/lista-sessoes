@@ -10,26 +10,18 @@ header img { width: 250px; height: 40px; margin-left: 200px; }
 
 /*--------------------------------------------conteudo----------------------------------------------*/
 .img-destaque { margin-top: -10px; width: 100%; height: 450px; } 
-
 h1,h2,h3,.address { margin-top: 0; padding-top: 0; margin-bottom: 0; } 
-
 .content { display: flex; margin-top: -330px; margin-left: 200px; margin-right: 200px; justify-content: space-around; } 
 .info, .cartaz, .trailer { margin-left: 15px; color: antiquewhite; } 
 span {text-align: justify; } 
 .image { width: 250px; height: 350px; } 
 .sessao { display: flex; margin-top: 30px; margin-left: 200px; margin-bottom: 200px; margin-right: 200px; flex-wrap: wrap; } 
 .sessaoInfo { flex:1 1; align-items: center; width: 400px; height: 180px; background-color: #363535; margin:10px; } 
-
 .sala { margin-left: 20px; margin-top: 15px; margin-bottom: 15px; display: block; color: white; } 
-
-
 .hora { display:flex; flex-wrap: wrap; justify-content: flex-start; padding: 0; margin-left: 15px; } 
-
 .item-hora { display:flex; align-items: center; color: white; text-align: center; flex-wrap: wrap; } 
-
 .item-hora a { display: block; background: #25b8ff; text-align: center; padding: 10px; margin: 5px; } 
 .cinema { display:flex; margin-top: 50px; margin-left: 200px; margin-right: 200px; } 
-
 hr { margin-left: 200px; margin-right: 200px; } 
 .image-cinema { width: 100px; } 
 p { font-size: 15px; } 
@@ -38,47 +30,52 @@ p { font-size: 15px; }
 /*--------------------------------------------Rodapé----------------------------------------------*/
 
 footer { position: relative; bottom: 0; left: 0; width:100%; text-align: center; } 
-
 .footer img { margin-top: 30px; margin-bottom: 30px; height: 80px; } 
 
 /*-------------------------media query ------------------------------*/
 
-@media (max-width:450px) { body { overflow-x: hidden; width: 100%; } 
+@media (max-width:999px) { 
+body { overflow-x: hidden; width: 100%; } 
  #destaque { display: none; } 
-
- header { width: 95%; background-color: #1d1e20; text-align: center; position: relative; opacity: 1; } 
+ header { width: 100%; background-color: #1d1e20; text-align: center; position: relative; opacity: 1; } 
  header img { width: 250px; height: 40px; margin: auto; } 
  .content { width: 90%; margin: 10px; flex-wrap: wrap; align-items: center; max-width: initial; max-height: initial; } 
  .info,.trailer { align-items: center; max-width: initial; max-height: initial; width: 80%; margin: auto; } 
-
  .image { padding: 0; margin: auto; max-width: initial; max-height: initial; } 
-
  p { font-size: 6px; } 
  span { text-align: justify; } 
-
  h2 { font-style: 8px; } 
- 
  .image-cinema { width: 80px; margin-left:5px; max-width: initial; max-height: initial; } 
-
  hr { display: none; } 
-
  .cinema { margin-top: auto; margin-left: 5px; } 
- 
- hr { margin-left: 200px; margin-right: 200px; } 
+  hr { margin-left: 200px; margin-right: 200px; } 
  .cinema { width: 90%; margin: 10px; align-items: center; max-width: initial; max-height: initial; } 
  .image-cinema { width: 90; margin:10px; } 
  p { font-size: 10px; } 
  #address { color:white; margin-left: 2px; font-size: 8px;; } 
-
  .sessao { display: flex; flex-wrap: wrap; margin:auto; max-width: 400px; margin-bottom: 200px; } 
  .sessaoInfo { flex:1; width: 400px; height: 180px; background-color: #363535; } 
- 
  .sala { margin-left: 20px; margin-top: 15px; margin-bottom: 15px; display: block; color: white; } 
- 
  .hora { display:flex; flex-wrap: wrap; width: 350px; height: 120px; justify-content: flex-start; padding: 0; margin-left: 15px; margin-top:0; }
- 
  .item-hora { display:flex; align-items: center; color: white; text-align: center; flex-wrap: wrap; } 
- 
  .item-hora a { display: block; background: #25b8ff; text-align: center; padding: 10px; margin: 5px; }
+}
+
+@media (min-width:1193px) and (max-width:1256px) { 
+    .content { display: flex; margin-top: -330px; margin-left: 80px; margin-right: 200px;  justify-content: space-around; } 
+    .info{max-width: 300px; max-height:500px; }
+    .trailer { margin-left: 15px; color: antiquewhite; margin-right: 15px;} 
+}
+
+@media (min-width:1000px) and (max-width:1192px) { 
+    .content { display: flex; margin-top: -330px; margin-left: 80px; margin-right: 200px;  justify-content: space-around; } 
+    .info{max-width: 300px; max-height:500px; }
+    .trailer { display: none;} 
+    .sessao { display: flex; flex-wrap: wrap; margin:auto; max-width: 400px; margin-bottom: 200px; } 
+    .sessaoInfo { flex:1; width: 400px; height: 180px; background-color: #363535; } 
+    .sala { margin-left: 20px; margin-top: 15px; margin-bottom: 15px; display: block; color: white; } 
+    .hora { display:flex; ; width: 350px; height: 120px; justify-content: flex-start; padding: 0; margin-left: 15px; margin-top:0; }
+    .item-hora { display:flex; align-items: center; color: white; text-align: center; flex-wrap: wrap; } 
+    .item-hora a { display: block; background: #25b8ff; text-align: center; padding: 10px; margin: 5px; }
 }
 
