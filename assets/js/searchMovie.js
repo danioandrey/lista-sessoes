@@ -31,7 +31,7 @@ function createContent (contentMovie){
 	const content = document.getElementById('destaque');
 	const contentPoster = document.getElementById('img-cartaz');
 	
-	content.innerHTML = `<img src="${movieTop}">`;
+	content.innerHTML = `<img src="${movieTop}" class="img-destaque">`;
 	contentPoster.innerHTML = `<img src="${moviePoster}" class="image">`;
 }
 
@@ -70,8 +70,3 @@ function createAddress(contentMovie){
 
 }
 
-function createSession (ContentMovie){
-	let room = contentMovie.room;
-	let hour = contentMovie.realDate;
-
-}
