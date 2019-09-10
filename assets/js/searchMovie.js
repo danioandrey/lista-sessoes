@@ -9,8 +9,6 @@ function searchMovie() {
 		var response = xhr.responseText;
 		var contentMovie = JSON.parse(response);
 		
-		console.log(contentMovie);
-		
 		createContent(contentMovie);
 		createInfoMovie(contentMovie);
 		createTrailer(contentMovie);
